@@ -16,13 +16,13 @@ apply plugin: 'idea'
 apply plugin: 'spring-boot'
 
 jar {
-	baseName = 'test-eureka-ribbon'
+	baseName = 'test-spring-cloud-ribbon'
 	version = '0.0.1-SNAPSHOT'
 }
 
 ext {
-	name = 'Eureka Ribbon'
-	description = 'Eureka Ribbon'
+	name = 'Spring Cloud Ribbon'
+	description = 'Spring Cloud Ribbon'
 	version = '0.0.1-SNAPSHOT'
 	sourceEncoding = 'UTF-8'
 }
@@ -62,4 +62,5 @@ dependencies {
 
 	compile('org.springframework.cloud:spring-cloud-starter-eureka')
 	compile('org.springframework.cloud:spring-cloud-starter-ribbon')
+	compile('org.springframework.cloud:spring-cloud-starter-hystrix')
 }
