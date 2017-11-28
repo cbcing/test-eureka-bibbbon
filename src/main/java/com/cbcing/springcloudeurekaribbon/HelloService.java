@@ -13,7 +13,7 @@ public class HelloService {
 
     @HystrixCommand(fallbackMethod = "helloFallback")
     public String helloService() {
-        return restTemplate.getForEntity("http://TEST-SPRING-CLOUD-EUREKA-SERVICE-PROVIDER/hello", String.class).getBody();
+        return restTemplate.getForEntity("http://TEST-EUREKA-SERVICE-PROVIDER/hello", String.class).getBody();
     }
 
     public String helloFallback() {
